@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package proxum.user;
+
+message CreateUserRequest {
+  string username = 1;
+  string email = 2;
+}
+
+message UserResponse {
+  int32 id = 1;
+  string username = 2;
+  string email = 3;
+} 
