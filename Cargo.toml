@@ -1,0 +1,17 @@
+[package]
+name = "proxum"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+prost = "0.14.3"
+axum = { version = "0.8.8", features = ["macros"] }
+tokio = { version = "1.49.0", features = ["full"] }
+sqlx = { version = "0.8", features = ["runtime-tokio-rustls", "any", "postgres"] }
+async-trait = "0.1.89"
+serde = { version = "1.0.228", features = ["derive"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+
+[build-dependencies]
+prost-build = "0.14.3"
